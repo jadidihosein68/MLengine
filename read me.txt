@@ -1,0 +1,5 @@
+pip install wheel
+pip install pandas
+
+pip3 install -U scikit-learn scipy matplotlib
+
