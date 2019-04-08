@@ -9,12 +9,15 @@ app = Flask(__name__)
 music_data = pd.read_csv('music.csv')
 @app.route('/predict/gender/<int:gender>/age/<int:age>')
 def show_predict(gender,age):
-    model = joblib.load('music-recommaner.joblib')
+    try :
+        model = joblib.load('music-recommaner.joblib')
+    except :
+        return ("call /updateModel")
+
     predictions = model.predict([[age,gender]])
     return jsonify(str(predictions))
 
 #http://localhost:5000/predict/gender/1/age/32
-
 
 @app.route('/updateModel')
 def update_model():
