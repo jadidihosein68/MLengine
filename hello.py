@@ -1,11 +1,13 @@
-import pandas as pd
-from flask import Flask
-from flask import jsonify
-from sklearn import tree
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.externals import joblib
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score 
+import pandas as pd # to manage dataframe 
+from flask import Flask # use for rest 
+from flask import jsonify # to return json 
+from sklearn import tree # to cketch tree 
+from sklearn.tree import DecisionTreeClassifier # to use clasification method 
+from sklearn.externals import joblib # to export and import model 
+from sklearn.model_selection import train_test_split # to train 
+from sklearn.metrics import accuracy_score  # to test 
+import pyodbc # for DB 
+
 
 
 app = Flask(__name__)
