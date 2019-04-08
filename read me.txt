@@ -1,5 +1,17 @@
+
+#############################################################
+before run the app make sure to get the packages below : 
+
 pip install wheel
 pip install pandas
-
 pip3 install -U scikit-learn scipy matplotlib
+pip install flask
+pip install sklearn
 
+#############################################################
+To run the app write the following command in Anaconda prompt 
+
+set FLASK_APP=hello.py
+flask run
+
+the app will host on port 5000
