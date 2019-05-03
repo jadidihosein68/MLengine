@@ -7,11 +7,12 @@ pip install pandas
 pip3 install -U scikit-learn scipy matplotlib
 pip install flask
 pip install sklearn
+pip install flask_restplus
 
 #############################################################
 To run the app write the following command in Anaconda prompt 
 
-set FLASK_APP=hello.py
+set FLASK_APP=app.py
 flask run
 
 the app will host on port 5000
